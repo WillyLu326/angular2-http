@@ -1,0 +1,14 @@
+<ul>
+	<li *ngFor=" let user of users "> 
+		{{ user.username }} - {{ user.password }}
+	</li>
+
+
+	<label for="username">Username</label>
+	<input type="text" name="username" class="form-control" #username>
+	<label for="password">Password</label>
+	<input type="text" name="password" class="form-control" #password>
+	<button class="btn btn-primary" 
+		(click)="onSubmit( username.value, password.value )">Submit</button>
+
+</ul>
