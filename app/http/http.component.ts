@@ -1,12 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { Response } from '@angular/http';
 
 import { HttpService } from './http.service';
 
 @Component({
 	selector: 'http-app',
 	templateUrl: './app/http/http.component.html'
-}) 
+})
 export class HttpAppComponent implements OnInit{
 	users: any[] = [];
 
