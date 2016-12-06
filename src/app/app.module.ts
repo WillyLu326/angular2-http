@@ -13,6 +13,8 @@ import { UsersEditComponent } from './users/users-edit/users-edit.component';
 import { UsersSingleComponent } from './users/users-single/users-single.component';
 import { UsersCreateComponent } from './users/users-create/users-create.component';
 
+import { DoublePipe } from "./pipes/doublePipe";
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +22,8 @@ import { UsersCreateComponent } from './users/users-create/users-create.componen
     UsersListComponent,
     UsersEditComponent,
     UsersSingleComponent,
-    UsersCreateComponent
+    UsersCreateComponent,
+    DoublePipe
   ],
   imports: [
     BrowserModule,
