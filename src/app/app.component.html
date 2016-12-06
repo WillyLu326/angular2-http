@@ -1,3 +1,15 @@
-<h1>
-  <app-http></app-http>
-</h1>
+<nav class="navbar navbar-inverse">
+  <div class="container">
+    <div class="navbar-header">
+      <a [routerLink]="['/']" class="navbar-brand">Angular2 Http</a>
+    </div>
+
+    <ul class="nav navbar-nav">
+      <li><a>Users</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+  <router-outlet></router-outlet>
+</div>

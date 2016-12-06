@@ -1,0 +1,12 @@
+<button class="btn btn-info" [routerLink]="['/users']">Go Back</button>
+<br><br>
+<div *ngIf="user" class="text-center">
+  <button class="btn btn-danger" [routerLink]="['/users', user.id, 'edit']">Edit</button>
+  <br><br>
+  <div class="">
+    <img [src]="user.avatar" class="img-rounded" />
+    <h4>{{ user.name }} <small>{{ user.username }}</small></h4>
+  </div>
+
+</div>
+

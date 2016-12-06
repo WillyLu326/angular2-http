@@ -3,21 +3,21 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { HttpComponent } from './http.component';
+import { UsersEditComponent } from './users-edit.component';
 
-describe('HttpComponent', () => {
-  let component: HttpComponent;
-  let fixture: ComponentFixture<HttpComponent>;
+describe('UsersEditComponent', () => {
+  let component: UsersEditComponent;
+  let fixture: ComponentFixture<UsersEditComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ HttpComponent ]
+      declarations: [ UsersEditComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(HttpComponent);
+    fixture = TestBed.createComponent(UsersEditComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

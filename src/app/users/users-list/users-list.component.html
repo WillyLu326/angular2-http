@@ -1,0 +1,8 @@
+<div class="user-list row" *ngIf="users">
+  <div class="col-sm-4" *ngFor=" let user of users ">
+    <div class="user-card text-center" [routerLink]="['/users', user.id]">
+      <img [src]="user.avatar" class="img-circle" />
+      <h3>{{ user.name }} <small>{{ user.username }}</small></h3>
+    </div>
+  </div>
+</div>
