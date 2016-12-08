@@ -12,6 +12,7 @@ import { User } from "../../shared/models/User";
 })
 export class UsersSingleComponent implements OnInit {
 
+  // single user
   user: User;
 
   constructor(private usersService: UsersService, private route: ActivatedRoute) { }
